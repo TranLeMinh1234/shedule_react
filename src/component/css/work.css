@@ -1,0 +1,21 @@
+.Work
+{
+    font-size: 20px;
+    transition: 1s;
+}
+
+.Work:hover{
+    height: auto;
+    width: auto;
+    background-color: rgba(0, 255, 213, 0.863);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.time-work{
+    padding-left: 20px;
+}
+
+.title-work{
+    padding-left: 20px;
+}

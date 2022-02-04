@@ -1,0 +1,44 @@
+/* #0e1217: ô nhỏ */
+
+.popup{
+    background-color: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 50px 40px rgba(22, 22, 22, 0.363);
+    border-radius: 10px;
+    overflow: hidden;
+    --color-popup: #fff;
+}
+
+.header-popup{
+    border-width: 4px 20px 4px 20px;
+    border-style: solid;
+    border-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-poppup{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-popup);
+}
+
+.esc-btn{
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    color: white;
+}
+
+.bg-dark{
+    position: absolute;
+    background-color: rgb(0 243 255 / 38%);
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+  }
+
