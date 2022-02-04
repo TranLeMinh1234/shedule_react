@@ -6,6 +6,18 @@ class Popup extends React.Component
     constructor(props)
     {
         super(props);
+
+        this.state = {
+            renderCustom: this.props.renderCustom
+        }
+    }
+
+    static getDerivedStateFromProps(props,currentState)
+    {
+        console.log(props.renderCustom)
+        return{
+            renderCustom: props.renderCustom
+        };
     }
 
     render()
@@ -28,7 +40,7 @@ class Popup extends React.Component
                     </div> 
                     <div className='body-popup'>
                         {
-                            true && me.props.renderCustom()
+                            true && typeof this.state.renderCustom === "function" && this.state.renderCustom()
                         }
                     </div>
                 </div>

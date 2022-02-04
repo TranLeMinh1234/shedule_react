@@ -2,7 +2,8 @@ import React from "react";
 import './css/workDaily.css';
 import Popup from './popup.js';
 import ReactDOM from "react-dom";
-import Work from './work.js'
+import Work from './work.js';
+import './css/addEventPopupBody.css';
 
 class WorkDaily extends React.Component{
     constructor(props)
@@ -26,6 +27,7 @@ class WorkDaily extends React.Component{
         this.openBoxExtensions = this.openBoxExtensions.bind(this);
         this.seeDetail = this.seeDetail.bind(this);
         this.addEvent = this.addEvent.bind(this);
+        this.renderAddEvent = this.renderAddEvent.bind(this);
     }
 
     componentDidMount()
@@ -62,7 +64,16 @@ class WorkDaily extends React.Component{
     renderAddEvent()
     {
         return (
-            <div></div>
+            <div className="add-event-body">
+                <i className="fas fa-sun session-day-icon"></i>
+                <div className="clock-regis">
+
+                </div>
+                <div>
+                    <input type="time" />
+                </div>
+                    <textarea></textarea>
+            </div>
         );
     }
 

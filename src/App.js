@@ -23,12 +23,12 @@ class App extends React.Component{
     me.closePopup = this.closePopup.bind(this);
   }
 
-  openPopup(options, renderCustom){
+  openPopup(options, customRenderPopup){
     let me = this;
     this.setState({
       isOpeningPopup: true,
       optionsPopup: options,
-      renderCustom: renderCustom
+      customRenderPopup: customRenderPopup
     })
   }
 
@@ -47,7 +47,7 @@ class App extends React.Component{
           options={this.state.optionsPopup}  
           isOpeningPopup={this.state.isOpeningPopup} 
           closePopup={this.closePopup}
-          renderCustom={this.state.renderCustom}
+          renderCustom={this.state.customRenderPopup}
         />
       </div>
     );
